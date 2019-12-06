@@ -23,7 +23,13 @@ info 'Relink config directory...'
 rm -rf ~/.config/fcitx/rime && mkdir -p ~/.config/fcitx
 ln -sf "$SCRIPT_DIR" ~/.config/fcitx/rime
 
+info 'Clone directory repo...'
+rm -rf tmp && git clone --depth=1 https://github.com/wfxr/pinyin-dicts tmp
+
 info 'Transform directory...'
-./transform.sh ./dicts/*.scel
+./transform.sh ./tmp/*.scel
+
+info 'Clean up...'
+rm -rf tmp
 
 info 'Finished.'
