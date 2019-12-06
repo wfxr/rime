@@ -1,0 +1,3 @@
+# Rime
+
+My Rime configuration.

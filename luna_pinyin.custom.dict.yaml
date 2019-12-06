@@ -1,0 +1,20 @@
+---
+name: luna_pinyin.custom
+version: "2018.10.05"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+    - luna_pinyin
+    - luna_pinyin.emoji
+    - luna_pinyin.emoji.apple
+    - luna_pinyin.emoji.scomper
+    - luna_pinyin.kaomoji
+    - ext.中国历史词汇大全【官方推荐】
+    - ext.北京市地铁站名
+    - ext.四级行政区划地名词库（最全）
+    - ext.成都市城市信息精选
+    - ext.明星【官方推荐】
+    - ext.网络流行新词【官方推荐】
+    - ext.计算机词汇大全【官方推荐】
+    - ext.诗词名句大全
+...
