@@ -19,10 +19,6 @@ git submodule update --init --recursive
 info 'Install double-pinyin...'
 rime_dir=. ./plum/rime-install double-pinyin
 
-info 'Relink config directory...'
-rm -rf ~/.config/fcitx/rime && mkdir -p ~/.config/fcitx
-ln -sf "$SCRIPT_DIR" ~/.config/fcitx/rime
-
 info 'Clone directory repo...'
 rm -rf tmp && git clone --depth=1 https://github.com/wfxr/pinyin-dicts tmp
 
