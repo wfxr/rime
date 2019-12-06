@@ -24,3 +24,4 @@ opencc
 emoji_suggestion.yaml
 
 ext.*.dict.yaml
+*.scel

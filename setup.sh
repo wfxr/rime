@@ -23,4 +23,7 @@ info 'Relink config directory...'
 rm -rf ~/.config/fcitx/rime && mkdir -p ~/.config/fcitx
 ln -sf "$SCRIPT_DIR" ~/.config/fcitx/rime
 
+info 'Transform directory...'
+./transform.sh ./dicts/*.scel
+
 info 'Finished.'
