@@ -28,4 +28,9 @@ info 'Transform directory...'
 info 'Clean up...'
 rm -rf tmp
 
+info 'Setup sync...'
+HOST=$(hostname)
+echo "installation_id: '$HOST'"     > ~/.config/fcitx/rime/installation.yaml
+echo "sync_dir: '$HOME/Sync/rime'" >> ~/.config/fcitx/rime/installation.yaml
+
 info 'Finished.'
